@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Pastikan viewport meta tag seperti ini -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Satwa Liar Indonesia</title>
+    <!-- Pastikan path CSS benar -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="#" class="logo">
+          <img src="Cendrawasih/ELLL.png" alt="Logo Satwa Liar" />
+        </a>
+
+        <!-- Tombol Hamburger -->
+        <button class="menu-toggle" id="mobile-menu" aria-label="Toggle menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <!-- Menu Navigasi -->
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="aboutus.html">Tentang Kami</a></li>
+          <li><a href="dukungan.html">Dukungan</a></li>
+          <li><a href="gallery.html">Galeri</a></li>
+          <li><a href="tim.html">Spesies</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="layar-penuh">
+      <header
+        id="galeri"
+        style="
+          height: 60vh;
+          background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url('Cendrawasih/galeri-header.jpg');
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div class="intro">
+          <h3>Galeri Satwa Liar Indonesia</h3>
+          <p>Keindahan dan Keunikan Fauna Nusantara</p>
+        </div>
+      </header>
+
+      <main>
+        <section id="galeri-foto">
+          <div class="layar-dalam">
+            <h3>Koleksi Foto Satwa Liar</h3>
+            <p class="ringkasan">
+              Jelajahi keanekaragaman hayati Indonesia melalui koleksi foto
+              satwa liar kami yang menakjubkan
+            </p>
+
+            <div class="filter-kategori">
+              <button class="tombol-filter aktif" data-kategori="semua">
+                Semua
+              </button>
+              <button class="tombol-filter" data-kategori="mamalia">
+                Mamalia
+              </button>
+              <button class="tombol-filter" data-kategori="burung">
+                Burung
+              </button>
+              <button class="tombol-filter" data-kategori="reptil">
+                Reptil
+              </button>
+              <button class="tombol-filter" data-kategori="laut">
+                Biota Laut
+              </button>
+            </div>
+
+            <div class="grid-galeri">
+              <!-- Mamalia -->
+              <div class="item-galeri" data-kategori="mamalia">
+                <img
+                  src="Cendrawasih/orangutan.jpg"
+                  alt="Orangutan Kalimantan"
+                />
+                <div class="keterangan">
+                  <h4>Orangutan Kalimantan</h4>
+                  <p>Spesies kera besar endemik Kalimantan</p>
+                </div>
+              </div>
+
+              <div class="item-galeri" data-kategori="mamalia">
+                <img src="Cendrawasih/harimau.jpg" alt="Harimau Sumatra" />
+                <div class="keterangan">
+                  <h4>Harimau Sumatra</h4>
+                  <p>Subspesies harimau terkecil yang terancam punah</p>
+                </div>
+              </div>
+
+              <!-- Burung -->
+              <div class="item-galeri" data-kategori="burung">
+                <img src="Cendrawasih/cendra.jpg" alt="Burung Cendrawasih" />
+                <div class="keterangan">
+                  <h4>Cendrawasih</h4>
+                  <p>Burung surga asli Papua</p>
+                </div>
+              </div>
+
+              <div class="item-galeri" data-kategori="burung">
+                <img src="Cendrawasih/jalak.jpg" alt="Jalak Bali" />
+                <div class="keterangan">
+                  <h4>Jalak Bali</h4>
+                  <p>Burung endemik Bali yang langka</p>
+                </div>
+              </div>
+
+              <!-- Reptil -->
+              <div class="item-galeri" data-kategori="reptil">
+                <img src="Cendrawasih/komodo.jpg" alt="Komodo" />
+                <div class="keterangan">
+                  <h4>Komodo</h4>
+                  <p>Kadal terbesar di dunia dari Pulau Komodo</p>
+                </div>
+              </div>
+
+              <div class="item-galeri" data-kategori="reptil">
+                <img src="Cendrawasih/ular.jpg" alt="Ular Pohon Hijau" />
+                <div class="keterangan">
+                  <h4>Ular Pohon Hijau</h4>
+                  <p>Spesies ular arboreal dari hutan Indonesia</p>
+                </div>
+              </div>
+
+              <!-- Biota Laut -->
+              <div class="item-galeri" data-kategori="laut">
+                <img src="Cendrawasih/hiu.jpg" alt="Hiu Paus" />
+                <div class="keterangan">
+                  <h4>Hiu Paus</h4>
+                  <p>Ikan terbesar yang sering terlihat di Raja Ampat</p>
+                </div>
+              </div>
+
+              <div class="item-galeri" data-kategori="laut">
+                <img src="Cendrawasih/penyu.jpg" alt="Penyu Hijau" />
+                <div class="keterangan">
+                  <h4>Penyu Hijau</h4>
+                  <p>Spesies penyu yang bertelur di pantai Indonesia</p>
+                </div>
+              </div>
+
+              <!-- Tambahan foto -->
+              <div class="item-galeri" data-kategori="mamalia">
+                <img src="Cendrawasih/badak.jpg" alt="Badak Jawa" />
+                <div class="keterangan">
+                  <h4>Badak Jawa</h4>
+                  <p>Salah satu mamalia paling langka di dunia</p>
+                </div>
+              </div>
+
+              <div class="item-galeri" data-kategori="burung">
+                <img src="Cendrawasih/elang.jpg" alt="Elang Jawa" />
+                <div class="keterangan">
+                  <h4>Elang Jawa</h4>
+                  <p>Burung pemangsa endemik Pulau Jawa</p>
+                </div>
+              </div>
+
+              <div class="item-galeri" data-kategori="reptil">
+                <img src="Cendrawasih/biawak.jpg" alt="Biawak Air" />
+                <div class="keterangan">
+                  <h4>Biawak Air</h4>
+                  <p>Reptil yang sering ditemukan di sungai Indonesia</p>
+                </div>
+              </div>
+
+              <div class="item-galeri" data-kategori="laut">
+                <img src="Cendrawasih/ikan.jpg" alt="Ikan Mandarin" />
+                <div class="keterangan">
+                  <h4>Ikan Mandarin</h4>
+                  <p>Ikan kecil berwarna-warni dari perairan Indonesia</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="abuabu" id="video-konservasi">
+          <div class="layar-dalam">
+            <h3>Video Konservasi</h3>
+            <p class="ringkasan">
+              Dokumentasi kegiatan lapangan dan upaya konservasi kami
+            </p>
+
+            <div class="grid-video">
+              <div class="item-video">
+                <div class="video-wrapper">
+                  <iframe
+                    src="https://www.youtube.com/embed/VIDEO_ID_1"
+                    frameborder="0"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <h4>Rehabilitasi Orangutan</h4>
+              </div>
+
+              <div class="item-video">
+                <div class="video-wrapper">
+                  <iframe
+                    src="https://www.youtube.com/embed/VIDEO_ID_2"
+                    frameborder="0"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <h4>Penangkaran Komodo</h4>
+              </div>
+
+              <div class="item-video">
+                <div class="video-wrapper">
+                  <iframe
+                    src="https://youtu.be/Hb83eT3JOwc?si=5_ucpcPt6dZsZqwl"
+                    frameborder="0"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <h4>Restorasi Terumbu Karang</h4>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer id="kontak">
+        <div class="layar-dalam">
+          <div>
+            <h5>Hubungi Kami</h5>
+            <p>Email: albannamuhamad@gmail.com</p>
+            <p>Telepon: +62 087880141917</p>
+          </div>
+          <div class="hak-cipta">
+            &copy; 2023 Konservasi Satwa Liar Indonesia
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="javascript.js"></script>
+    <script>
+      // Filter galeri
+      $(document).ready(function () {
+        $(".tombol-filter").click(function () {
+          const kategori = $(this).data("kategori");
+
+          $(".tombol-filter").removeClass("aktif");
+          $(this).addClass("aktif");
+
+          if (kategori === "semua") {
+            $(".item-galeri").show();
+          } else {
+            $(".item-galeri").hide();
+            $(`.item-galeri[data-kategori="${kategori}"]`).show();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
