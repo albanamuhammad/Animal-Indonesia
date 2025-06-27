@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <!-- Pastikan viewport meta tag seperti ini -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Satwa Liar Indonesia</title>
+    <!-- Pastikan path CSS benar -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="logo">
+                <img src="Cendrawasih/ELLL.png" alt="Logo Satwa Liar">
+            </a>
+            
+            <!-- Tombol Hamburger -->
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <!-- Menu Navigasi -->
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="aboutus.html">Tentang Kami</a></li>
+                <li><a href="dukungan.html">Dukungan</a></li>
+                <li><a href="gallery.html">Galeri</a></li>
+                <li><a href="tim.html">Spesies</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Pastikan path JS benar dan defer digunakan -->
+    <script src="javascript.js" defer></script>
+</body>
+</html>
+
+    <div class="layar-penuh">
+        <header id="kontak-header" style="height: 60vh; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Cendrawasih/kontak-header.jpg'); background-size: cover; background-position: center;">
+            <div class="intro">
+                <h3>Hubungi Kami</h3>
+                <p>Kami siap menjawab pertanyaan Anda tentang konservasi satwa liar Indonesia</p>
+            </div>
+        </header>
+
+        <main>
+            <section id="form-kontak">
+                <div class="layar-dalam">
+                    <h3>Formulir Kontak</h3>
+                    <p class="ringkasan">
+                        Silakan isi formulir di bawah ini untuk menghubungi tim kami. Kami akan merespon secepat mungkin.
+                    </p>
+                    
+                    <form class="form-hubungi">
+                        <div class="form-group">
+                            <label for="nama">Nama Lengkap</label>
+                            <input type="text" id="nama" name="nama" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Alamat Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telepon">Nomor Telepon/WhatsApp</label>
+                            <input type="tel" id="telepon" name="telepon">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subjek">Subjek Pesan</label>
+                            <select id="subjek" name="subjek" required>
+                                <option value="" disabled selected>Pilih subjek</option>
+                                <option value="konservasi">Informasi Konservasi</option>
+                                <option value="donasi">Donasi dan Sponsorship</option>
+                                <option value="relawan">Program Relawan</option>
+                                <option value="edukasi">Program Edukasi</option>
+                                <option value="lainnya">Lainnya</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="pesan">Pesan Anda</label>
+                            <textarea id="pesan" name="pesan" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit" class="tombol">Kirim Pesan</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            
+            <section class="abuabu" id="info-kontak">
+                <div class="layar-dalam">
+                    <h3>Informasi Kontak</h3>
+                    <div class="grid-kontak">
+                        <div class="kontak-item">
+                            <img src="Cendrawasih/icon-alamat.png" alt="Alamat">
+                            <h4>Kantor Pusat</h4>
+                            <p>Jl. Konservasi No. 123<br>Jakarta 12540, Indonesia</p>
+                        </div>
+                        
+                        <div class="kontak-item">
+                            <img src="Cendrawasih/icon-telepon.png" alt="Telepon">
+                            <h4>Telepon</h4>
+                            <p>+62 87880141917 (Kantor)<br>+62 85693816067 (Darurat)</p>
+                        </div>
+                        
+                        <div class="kontak-item">
+                            <img src="Cendrawasih/icon-email.png" alt="Email">
+                            <h4>Email</h4>
+                            <p>albannamuhamad@gmail.com<br>albannaassegaf_darurat@gmail.com</p>
+                        </div>
+                        
+                        <div class="kontak-item">
+                            <img src="Cendrawasih/icon-jam.png" alt="Jam Operasional">
+                            <h4>Jam Operasional</h4>
+                            <p>Senin-Jumat: 08.00-17.00 WIB<br>Sabtu: 08.00-14.00 WIB</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="lokasi-kantor">
+                <div class="layar-dalam">
+                    <h3>Lokasi Kantor Kami</h3>
+                    <div class="peta-wrapper">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.81956135063986!3d-6.194741395493371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5390917b759%3A0x6b45e67356080477!2sMonumen%20Nasional!5e0!3m2!1sid!2sid!4v1629297210508!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer-kontak">
+            <div class="layar-dalam">
+                <div>
+                    <h5>Tetap Terhubung</h5>
+                    <div class="sosmed-footer">
+                        <a href="#"><img src="Cendrawasih/icon-facebook
